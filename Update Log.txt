@@ -1,0 +1,6 @@
+Log of each version with version number and additions/changes.
+------------------------------------------------------------------
+(2019-07-19) 1.1 - Addition of functional 'Squared' button
+                  - Non-functional 'Root' button added
+                  - Place holder buttons created for future features
+(2019-07-16) 1.0 - Initial Creation

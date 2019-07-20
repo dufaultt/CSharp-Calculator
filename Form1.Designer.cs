@@ -1,4 +1,4 @@
-﻿namespace Calculator
+namespace Calculator
 {
     partial class Form1
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button button2;
             this.equals = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.num0 = new System.Windows.Forms.Button();
@@ -46,6 +47,11 @@
             this.divide = new System.Windows.Forms.Button();
             this.num7 = new System.Windows.Forms.Button();
             this.subtract = new System.Windows.Forms.Button();
+            this.Squared = new System.Windows.Forms.Button();
+            this.SquareRoot = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // equals
@@ -65,7 +71,7 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(12, 31);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(547, 53);
+            this.textBox1.Size = new System.Drawing.Size(721, 53);
             this.textBox1.TabIndex = 1;
             // 
             // num0
@@ -260,12 +266,71 @@
             this.subtract.UseVisualStyleBackColor = false;
             this.subtract.Click += new System.EventHandler(this.Subtract_Click);
             // 
+            // Squared
+            // 
+            this.Squared.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Squared.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Squared.Location = new System.Drawing.Point(590, 102);
+            this.Squared.Name = "Squared";
+            this.Squared.Size = new System.Drawing.Size(118, 80);
+            this.Squared.TabIndex = 18;
+            this.Squared.Text = "X^2";
+            this.Squared.UseVisualStyleBackColor = false;
+            this.Squared.Click += new System.EventHandler(this.Squared_Click);
+            // 
+            // SquareRoot
+            // 
+            this.SquareRoot.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.SquareRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SquareRoot.Location = new System.Drawing.Point(590, 212);
+            this.SquareRoot.Name = "SquareRoot";
+            this.SquareRoot.Size = new System.Drawing.Size(118, 80);
+            this.SquareRoot.TabIndex = 19;
+            this.SquareRoot.Text = "Root";
+            this.SquareRoot.UseVisualStyleBackColor = false;
+            this.SquareRoot.Click += new System.EventHandler(this.SquareRoot_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(590, 422);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 80);
+            this.button1.TabIndex = 20;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button2.Location = new System.Drawing.Point(590, 313);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(118, 80);
+            button2.TabIndex = 21;
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(590, 523);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(118, 80);
+            this.button3.TabIndex = 22;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(571, 638);
+            this.ClientSize = new System.Drawing.Size(745, 638);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SquareRoot);
+            this.Controls.Add(this.Squared);
             this.Controls.Add(this.subtract);
             this.Controls.Add(this.num7);
             this.Controls.Add(this.divide);
@@ -311,6 +376,10 @@
         private System.Windows.Forms.Button divide;
         private System.Windows.Forms.Button num7;
         private System.Windows.Forms.Button subtract;
+        private System.Windows.Forms.Button Squared;
+        private System.Windows.Forms.Button SquareRoot;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }
 

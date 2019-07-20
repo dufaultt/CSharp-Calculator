@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -170,6 +170,25 @@ namespace Calculator
             operand1 = input;
             operation = '*';
             input = string.Empty;
+        }
+
+        private void Squared_Click(object sender, EventArgs e)
+        {
+            operand1 = input;
+            double num;
+            double.TryParse(operand1, out num);
+
+            this.textBox1.Text = "";
+            this.input = string.Empty;
+            this.operand1 = string.Empty;
+
+            result = num * num;
+            textBox1.Text = result.ToString();
+        }
+
+        private void SquareRoot_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Divide_Click(object sender, EventArgs e)

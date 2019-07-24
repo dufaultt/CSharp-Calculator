@@ -188,7 +188,16 @@ namespace Calculator
 
         private void SquareRoot_Click(object sender, EventArgs e)
         {
+            operand1 = input;
+            double num;
+            double.TryParse(operand1, out num);
 
+            this.textBox1.Text = "";
+            this.input = string.Empty;
+            this.operand1 = string.Empty;
+
+            result = Math.Sqrt(num);
+            textBox1.Text = result.ToString();
         }
 
         private void Divide_Click(object sender, EventArgs e)

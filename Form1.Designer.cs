@@ -28,7 +28,7 @@ namespace Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button button2;
+            System.Windows.Forms.Button sin;
             this.equals = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.num0 = new System.Windows.Forms.Button();
@@ -49,10 +49,22 @@ namespace Calculator
             this.subtract = new System.Windows.Forms.Button();
             this.Squared = new System.Windows.Forms.Button();
             this.SquareRoot = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
+            this.tan = new System.Windows.Forms.Button();
+            sin = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // sin
+            // 
+            sin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            sin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            sin.Location = new System.Drawing.Point(590, 313);
+            sin.Name = "sin";
+            sin.Size = new System.Drawing.Size(118, 80);
+            sin.TabIndex = 21;
+            sin.Text = "Sin";
+            sin.UseVisualStyleBackColor = false;
+            sin.Click += new System.EventHandler(this.Sin_Click);
             // 
             // equals
             // 
@@ -290,35 +302,29 @@ namespace Calculator
             this.SquareRoot.UseVisualStyleBackColor = false;
             this.SquareRoot.Click += new System.EventHandler(this.SquareRoot_Click);
             // 
-            // button1
+            // cos
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(590, 422);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 80);
-            this.button1.TabIndex = 20;
-            this.button1.UseVisualStyleBackColor = false;
+            this.cos.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cos.Location = new System.Drawing.Point(590, 421);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(118, 80);
+            this.cos.TabIndex = 20;
+            this.cos.Text = "Cos";
+            this.cos.UseVisualStyleBackColor = false;
+            this.cos.Click += new System.EventHandler(this.Cos_Click);
             // 
-            // button2
+            // tan
             // 
-            button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button2.Location = new System.Drawing.Point(590, 313);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(118, 80);
-            button2.TabIndex = 21;
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(590, 523);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 80);
-            this.button3.TabIndex = 22;
-            this.button3.UseVisualStyleBackColor = false;
+            this.tan.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tan.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tan.Location = new System.Drawing.Point(590, 523);
+            this.tan.Name = "tan";
+            this.tan.Size = new System.Drawing.Size(118, 80);
+            this.tan.TabIndex = 22;
+            this.tan.Text = "Tan";
+            this.tan.UseVisualStyleBackColor = false;
+            this.tan.Click += new System.EventHandler(this.Tan_Click);
             // 
             // Form1
             // 
@@ -326,9 +332,9 @@ namespace Calculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(745, 638);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tan);
+            this.Controls.Add(sin);
+            this.Controls.Add(this.cos);
             this.Controls.Add(this.SquareRoot);
             this.Controls.Add(this.Squared);
             this.Controls.Add(this.subtract);
@@ -378,8 +384,8 @@ namespace Calculator
         private System.Windows.Forms.Button subtract;
         private System.Windows.Forms.Button Squared;
         private System.Windows.Forms.Button SquareRoot;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button tan;
     }
 }
 

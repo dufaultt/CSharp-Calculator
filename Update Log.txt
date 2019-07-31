@@ -1,5 +1,7 @@
 Log of each version with version number and additions/changes.
 ------------------------------------------------------------------
+(2019-07-30) 1.1.1    - Adjusted the way that Root and Squared functions operate
+                        - Input can now be chained together properly 
 (2019-07-26) 1.1.0    - Added 3 more buttons, based on trigonmetric functions
                         - Sin, Cos, and Tan buttons added
 (2019-07-23) 1.0.2    - Added the functionality of the 'Root' button

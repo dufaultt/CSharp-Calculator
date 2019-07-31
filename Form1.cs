@@ -183,7 +183,8 @@ namespace Calculator
             this.operand1 = string.Empty;
 
             result = num * num;
-            textBox1.Text = result.ToString();
+            this.input = result.ToString();
+            this.textBox1.Text = input;
         }
 
         private void SquareRoot_Click(object sender, EventArgs e)
@@ -197,7 +198,8 @@ namespace Calculator
             this.operand1 = string.Empty;
 
             result = Math.Sqrt(num);
-            textBox1.Text = result.ToString();
+            this.input = result.ToString();
+            this.textBox1.Text = input;
         }
 
         private void Sin_Click(object sender, EventArgs e)

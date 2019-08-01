@@ -1,3 +1,3 @@
 # CSharp-Calculator
-Simple calculator made in the C# Language </br>
+Simple calculator made in C# </br>
 Check update log for version information
